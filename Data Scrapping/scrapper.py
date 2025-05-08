@@ -9,6 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 import os
 import subprocess
+import re
+
 def scrape_with_selenium(url,driver):
     
     driver.get(url)

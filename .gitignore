@@ -1,3 +1,5 @@
 venv/
 .env
 cheese_data_with_image_descriptions.json
+cheese_data.json
+cheese_data.csv

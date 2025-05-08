@@ -21,7 +21,7 @@ client = OpenAI(
 
 
 
-with open('Data Scrapping/cheese_data.json', 'r') as f:
+with open('cheese_data.json', 'r') as f:
     cheese_data = json.load(f)
 
 def get_original_image_url(next_js_url):
