@@ -126,6 +126,11 @@ def scrape_with_selenium(url):
             product_data['each_price'] = priceInfo[0].text
     except:
         pass
+    try:
+        badge = driver.find_element(By.CSS_SELECTOR, "span.chakra-badge.css-1mwp5d1")
+        product_data['price_per_unit'] = badge.text
+    except:
+        pass
     # Get all product images
     try:
         # First click on the tabs to make sure all images are loaded

@@ -16,7 +16,7 @@
     "each_weight": "20 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.70/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -65,7 +65,7 @@
     "each_weight": "1.2875 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.35/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -112,7 +112,7 @@
     "each_weight": "1.25 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.29/LB",
     "category": [
       "Cheese",
       "Shredded Cheese"
@@ -168,7 +168,7 @@
     "each_weight": "0.1875 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.59/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -221,7 +221,7 @@
     "each_weight": "1.25 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$6.04/LB",
     "category": [
       "Cheese",
       "Crumbled, Cubed, Grated, Shaved"
@@ -261,7 +261,7 @@
     "each_weight": "1.25 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.29/LB",
     "category": [
       "Cheese",
       "Crumbled, Cubed, Grated, Shaved"
@@ -317,7 +317,7 @@
     "each_weight": "1.25 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.38/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -360,7 +360,7 @@
     "each_weight": "1.25 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.94/LB",
     "category": [
       "Cheese",
       "Shredded Cheese"
@@ -405,7 +405,7 @@
     "each_weight": "0.5 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.38/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -459,7 +459,7 @@
     "each_weight": "0.1875 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.48/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -543,7 +543,7 @@
     "each_weight": "20 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.76/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -590,7 +590,7 @@
     "each_weight": "0.625 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.40/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -679,7 +679,7 @@
     "each_weight": "10 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.41/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -724,7 +724,7 @@
     "each_weight": "1.25 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.94/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -770,7 +770,7 @@
     "each_weight": "2.5 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.91/LB",
     "category": [
       "Cheese",
       "Crumbled, Cubed, Grated, Shaved"
@@ -809,7 +809,7 @@
     "each_weight": "40 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.46/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -835,7 +835,7 @@
     "each_weight": "1.3125 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.12/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -882,7 +882,7 @@
     "each_weight": "0.1875 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.39/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -934,7 +934,7 @@
     "each_weight": "6 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$6.45/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -972,7 +972,7 @@
     "each_weight": "24 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.58/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -1022,7 +1022,7 @@
     "each_weight": "1.25 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.25/LB",
     "category": [
       "Cheese",
       "Shredded Cheese"
@@ -1078,7 +1078,7 @@
     "each_weight": "20 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.65/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -1124,7 +1124,7 @@
     "each_weight": "0.1875 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.41/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -1173,7 +1173,7 @@
     "each_weight": "2 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$9.42/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -1213,7 +1213,7 @@
     "each_weight": "4 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$8.35/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -1254,7 +1254,7 @@
     "each_weight": "30.98 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.34/LB",
     "category": [
       "Cheese",
       "Cream Cheese"
@@ -1300,7 +1300,7 @@
     "each_weight": "13.12 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$7.23/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -1346,7 +1346,7 @@
     "each_weight": "8 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.20/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -1393,7 +1393,7 @@
     "each_weight": "0.625 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.49/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -1481,7 +1481,7 @@
     "each_weight": "20 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.78/LB",
     "category": [
       "Cheese",
       "Shredded Cheese"
@@ -1525,7 +1525,7 @@
     "each_weight": "12 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.12/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -1568,7 +1568,7 @@
     "each_weight": "10 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.19/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -1616,7 +1616,7 @@
     "each_weight": "30 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.19/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -1659,7 +1659,7 @@
     "each_weight": "48 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.17/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -1685,7 +1685,7 @@
     "each_weight": "15.43 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.80/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -1727,7 +1727,7 @@
     "each_weight": "6 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.78/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -1769,7 +1769,7 @@
     "each_weight": "31 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.36/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -1864,7 +1864,7 @@
     "each_weight": "1.285 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.89/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -1909,7 +1909,7 @@
     "each_weight": "6.25 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$0.51/CT",
     "category": [
       "Cheese",
       "Cream Cheese"
@@ -1948,7 +1948,7 @@
     "each_weight": "48 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.09/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -1994,7 +1994,7 @@
     "each_weight": "20 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.58/LB",
     "category": [
       "Cheese",
       "Cheese Wheel"
@@ -2034,7 +2034,7 @@
     "each_weight": "20 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$8.97/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -2080,7 +2080,7 @@
     "each_weight": "4 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.68/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -2122,7 +2122,7 @@
     "each_weight": "0.1875 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$6.37/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -2173,7 +2173,7 @@
     "each_weight": "0.1875 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.98/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -2225,7 +2225,7 @@
     "each_weight": "2.5 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$13.46/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -2271,7 +2271,7 @@
     "each_weight": "7 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$9.79/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -2317,7 +2317,7 @@
     "each_weight": "30 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.38/LB",
     "category": [
       "Cheese",
       "Shredded Cheese"
@@ -2365,7 +2365,7 @@
     "each_weight": "30 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.85/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -2403,7 +2403,7 @@
     "each_weight": "18 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$8.67/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -2453,7 +2453,7 @@
     "each_weight": "2.5 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.69/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -2501,7 +2501,7 @@
     "each_weight": "0.833333 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.21/LB",
     "category": [
       "Cheese",
       "Shredded Cheese"
@@ -2547,7 +2547,7 @@
     "each_weight": "40 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.80/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -2592,7 +2592,7 @@
     "each_weight": "2.5 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$6.02/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -2640,7 +2640,7 @@
     "each_weight": "30 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$1.50/LB",
     "category": [
       "Cheese",
       "Cream Cheese"
@@ -2679,7 +2679,7 @@
     "each_weight": "6 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.76/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -2717,7 +2717,7 @@
     "each_weight": "18 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$6.95/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -2810,7 +2810,7 @@
     "each_weight": "3 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$7.23/LB",
     "category": [
       "Cheese",
       "Cream Cheese"
@@ -2848,7 +2848,7 @@
     "each_weight": "30 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.21/LB",
     "category": [
       "Cheese",
       "Shredded Cheese"
@@ -2886,7 +2886,7 @@
     "each_weight": "40 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$12.87/LOAF",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -2936,7 +2936,7 @@
     "each_weight": "40 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$10.85/LOAF",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -2985,7 +2985,7 @@
     "each_weight": "20 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.29/LB",
     "category": [
       "Cheese",
       "Shredded Cheese"
@@ -3029,7 +3029,7 @@
     "each_weight": "6 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.44/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -3075,7 +3075,7 @@
     "each_weight": "5 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$6.58/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -3123,7 +3123,7 @@
     "each_weight": "14 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.09/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -3169,7 +3169,7 @@
     "each_weight": "4.69 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$0.50/CT",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -3216,7 +3216,7 @@
     "each_weight": "4 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$0.71/CT",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -3263,7 +3263,7 @@
     "each_weight": "3.75 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.33/CT",
     "category": [
       "Cheese",
       "Cottage Cheese"
@@ -3288,7 +3288,7 @@
     "each_weight": "1.5 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$0.86/CT",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -3334,7 +3334,7 @@
     "each_weight": "0.833333 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.38/LB",
     "category": [
       "Cheese",
       "Shredded Cheese"
@@ -3416,7 +3416,7 @@
     "each_weight": "0.625 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.88/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -3441,7 +3441,7 @@
     "each_weight": "30 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.48/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -3488,7 +3488,7 @@
     "each_weight": "4 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$7.28/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -3533,7 +3533,7 @@
     "each_weight": "28 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$6.05/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -3584,7 +3584,7 @@
     "each_weight": "1.5 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$5.81/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -3626,7 +3626,7 @@
     "each_weight": "6 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$8.07/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -3674,7 +3674,7 @@
     "each_weight": "",
     "case_dimensions": "",
     "each_dimensions": "",
-    "price_per_unit": "",
+    "price_per_unit": "$5.07/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -3718,7 +3718,7 @@
     "each_weight": "20 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$6.97/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -3764,7 +3764,7 @@
     "each_weight": "12 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$1.77/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -3808,7 +3808,7 @@
     "each_weight": "10 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$8.68/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -3857,7 +3857,7 @@
     "each_weight": "10 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$0.32/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -3947,7 +3947,7 @@
     "each_weight": "",
     "case_dimensions": "",
     "each_dimensions": "",
-    "price_per_unit": "",
+    "price_per_unit": "$3.30/LB",
     "category": [
       "Cheese",
       "Sliced Cheese"
@@ -4038,7 +4038,7 @@
     "each_weight": "12 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.33/LB",
     "category": [
       "Cheese",
       "Cottage Cheese"
@@ -4063,7 +4063,7 @@
     "each_weight": "40 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$1.26/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -4088,7 +4088,7 @@
     "each_weight": "4 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$8.60/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -4132,7 +4132,7 @@
     "each_weight": "30 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.54/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -4223,7 +4223,7 @@
     "each_weight": "0.625 lbs",
     "case_dimensions": "L 1\" x W 1\" x H 1\"",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$3.33/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -4248,7 +4248,7 @@
     "each_weight": "30 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$1.62/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -4295,7 +4295,7 @@
     "each_weight": "40 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$1.12/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -4320,7 +4320,7 @@
     "each_weight": "4 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$4.58/LB",
     "category": [
       "Cheese",
       "Specialty Cheese"
@@ -4390,7 +4390,7 @@
     "each_weight": "47 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$1.00/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
@@ -4416,7 +4416,7 @@
     "each_weight": "48 lbs",
     "case_dimensions": "",
     "each_dimensions": "L 1\" x W 1\" x H 1\"",
-    "price_per_unit": "",
+    "price_per_unit": "$2.59/LB",
     "category": [
       "Cheese",
       "Cheese Loaf"
