@@ -1,38 +1,24 @@
+import json
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
-import json
-import time
 import os
 import subprocess
 import re
+import yaml
 
-def scrape_with_selenium(url):
-    # Set up Chrome options
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--no-sandbox")
-    chrome_options.add_argument("--disable-dev-shm-usage")
+# Load configuration
+def load_config():
+    with open('config/config.yaml', 'r') as file:
+        return yaml.safe_load(file)
+
+def scrape_with_selenium(url,driver):
     
-    # Installation and setup for chromedriver
-    try:
-        # Check if Chrome is installed
-        subprocess.run(["google-chrome", "--version"], check=True, stdout=subprocess.PIPE)
-    except:
-        print("Installing Chrome...")
-        subprocess.run(["apt-get", "update"])
-        subprocess.run(["apt-get", "install", "-y", "google-chrome-stable"])
-    
-    # Use Selenium Wire with Chrome directly
-    driver = webdriver.Chrome(options=chrome_options)
-    wait = WebDriverWait(driver, 10)
-    
-    # Navigate to the URL
     driver.get(url)
     
     # Wait for the page to load
@@ -40,6 +26,7 @@ def scrape_with_selenium(url):
     
     # Extract product details
     product_data = {
+        'url': url,
         'title': '',
         'brand': '',
         'sku': '',
@@ -126,11 +113,13 @@ def scrape_with_selenium(url):
             product_data['each_price'] = priceInfo[0].text
     except:
         pass
+
     try:
         badge = driver.find_element(By.CSS_SELECTOR, "span.chakra-badge.css-1mwp5d1")
         product_data['price_per_unit'] = badge.text
     except:
         pass
+    
     # Get all product images
     try:
         # First click on the tabs to make sure all images are loaded
@@ -327,21 +316,97 @@ def scrape_with_selenium(url):
     except:
         pass
     
-    # Close the driver
-    driver.quit()
     
     return product_data
 
-# Example usage
-url = "https://shop.kimelo.com/sku/cheese-paneer-gopi-45-lb/374574"
-product_info = scrape_with_selenium(url)
+def scrape_cheese_data():
+    # Set up Selenium with Chrome
+    chrome_options = Options()
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    
+    # Installation and setup for chromedriver
+    try:
+        # Check if Chrome is installed
+        subprocess.run(["google-chrome", "--version"], check=True, stdout=subprocess.PIPE)
+    except:
+        print("Installing Chrome...")
+        subprocess.run(["apt-get", "update"])
+        subprocess.run(["apt-get", "install", "-y", "google-chrome-stable"])
+    
+    # Use Selenium Wire with Chrome directly
+    driver = webdriver.Chrome(options=chrome_options)
+    wait = WebDriverWait(driver, 10)
+    
+    try:
+        all_product_links = []
+        page_num = 1
+        has_next_page = True
+        
+        while has_next_page:
+            print(f"Scraping page {page_num}...")
+            url = f'https://shop.kimelo.com/department/cheese/3365?page={page_num}'
+            driver.get(url)
+            
+            # Wait for page to load completely
+            time.sleep(5)
+            
+            # Wait for products to load
+            try:
+                wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "a.chakra-card.group")))
+                
+                # Get all product cards
+                product_cards = driver.find_elements(By.CSS_SELECTOR, "a.chakra-card.group")
+                
+                # Extract links
+                page_links = [card.get_attribute('href') for card in product_cards if card.get_attribute('href')]
+                all_product_links.extend(page_links)
+                
+                print(f"Found {len(page_links)} products on page {page_num}")
+                
+                # Check if there's a next page
+                next_buttons = driver.find_elements(By.CSS_SELECTOR, "a[aria-label='Next page']")
+                if next_buttons and not next_buttons[0].get_attribute("disabled"):
+                    page_num += 1
+                else:
+                    has_next_page = False
+                    
+            except Exception as e:
+                print(f"Error on page {page_num}: {e}")
+                has_next_page = False
+        
+        print(f"Found a total of {len(all_product_links)} product links across {page_num} pages")
+        
+        # Now scrape individual product pages
+        cheese_data = []
+        
+        for link in all_product_links:
+            try:
+                print(f"Scraping product: {link}")
+                product_info = scrape_with_selenium(link,driver)
+                
+                cheese_data.append(product_info)
+                
+            except Exception as e:
+                print(f"Error scraping {link}: {e}")
+        
+        # Save data to JSON and CSV
+        with open('cheese_data.json', 'w') as f:
+            json.dump(cheese_data, f, indent=2)
+        
+        # Convert to DataFrame and save as CSV
+        df = pd.json_normalize(cheese_data)
+        df.to_csv('cheese_data.csv', index=False)
+        
+        print(f"Successfully scraped {len(cheese_data)} cheese products!")
+        return cheese_data
+        
+    except Exception as e:
+        print(f"Error during scraping: {e}")
+        raise
+    finally:
+        driver.quit()
 
-# Save as JSON
-with open('product_data.json', 'w', encoding='utf-8') as f:
-    json.dump(product_info, f, indent=4, ensure_ascii=False)
-
-# Create a DataFrame for easy viewing/export
-df = pd.DataFrame([product_info])
-df.to_csv('product_data.csv', index=False)
-
-print("Data extracted successfully!")
+if __name__ == "__main__":
+    scrape_cheese_data()
