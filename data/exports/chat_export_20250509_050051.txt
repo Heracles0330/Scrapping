@@ -1,4 +1,0 @@
-USER: Hi
-
-ASSISTANT: Hello! How can I assist you today? Whether you have questions about cheese or anything else, feel free to ask!
-
