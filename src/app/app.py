@@ -168,7 +168,7 @@ st.markdown("</div>", unsafe_allow_html=True)
 st.markdown("""
 <style>
 .chat-container {
-    max-height: 60vh !important;
+    max-height: calc(60vh - 100px) !important;
     overflow-y: auto;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
