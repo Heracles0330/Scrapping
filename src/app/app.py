@@ -1,8 +1,15 @@
 import streamlit as st
-from src.rag.llm import LLM
 import os
 import time
 import json
+import sys
+from pathlib import Path
+
+# Get the absolute path to the project root
+project_root = Path(__file__).parent.absolute()
+sys.path.append(os.path.join(project_root, "../.."))
+
+from src.rag.llm import LLM
 
 # Page configuration
 st.set_page_config(
