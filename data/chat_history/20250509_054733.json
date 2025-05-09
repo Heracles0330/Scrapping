@@ -1,0 +1,12 @@
+[
+  {
+    "role": "user",
+    "content": "Tell me the most expensive cheese.",
+    "timestamp": "2025-05-09T05:47:49.653907"
+  },
+  {
+    "role": "assistant",
+    "content": "The most expensive cheese in the world is Pule cheese, which is made in Serbia. This unique cheese is crafted from the milk of Balkan donkeys, specifically from the Zasavica Special Nature Reserve. The production process is quite labor-intensive, as it takes about 25 liters (approximately 6.6 gallons) of donkey milk to produce just one kilogram (about 2.2 pounds) of cheese. Due to its rarity and the meticulous production process, Pule cheese can cost around $1,000 per kilogram (over $450 per pound). Its high price also reflects the limited availability, as there are only a few hundred donkeys that are milked for this purpose.",
+    "timestamp": "2025-05-09T05:47:53.295223"
+  }
+]

@@ -1,0 +1,113 @@
+/* src/app/style.css */
+.user-message {
+    background-color: #e2cdc1;
+    color: #333333;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-left: 300px;
+    text-align: right;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.assistant-message {
+    background-color: #f0f7ee;
+    color: #333333;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-right: 300px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.stTextInput {
+    position: fixed;
+    bottom: 20px;
+    width: calc(100% - 500px);
+}
+
+/* Additional styling for better appearance */
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.chat-header {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1f77b4;
+}
+
+.chat-container {
+    margin-bottom: 3rem;
+    overflow-y: auto;
+    max-height: 65vh;
+    padding: 1rem;
+}
+
+.message-timestamp {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.user-input-container {
+    position: relative;
+    margin-top: 2rem;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Improve markdown rendering */
+.assistant-message p {
+    margin-bottom: 0.5rem;
+}
+.assistant-message span {
+    color: #f15d07;
+}
+
+.assistant-message ul, .assistant-message ol {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Add styling for images */
+.assistant-message img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+/* Style sidebar elements */
+.stSidebar {
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+.stSidebar .stButton>button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.assistant-message img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 300px;
+    height: auto !important;
+    object-fit: contain;
+}
+.main.st-emotion-cache-uf99v8.ea3mdgi8 {
+    margin-bottom: 100px;
+}

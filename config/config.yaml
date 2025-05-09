@@ -1,0 +1,60 @@
+# API Keys and Credentials
+api_keys:
+  openai_api_key: ${OPENAI_API_KEY}
+  pinecone_api_key: ${PINECONE_API_KEY}
+
+# Scraper Configuration
+scraper:
+  url: "https://shop.kimelo.com/department/cheese/3365"
+  headless: true
+  timeout: 5 
+  retries: 3
+  wait_time: 3
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+  chrome_options:
+    - "--no-sandbox"
+    - "--disable-dev-shm-usage"
+
+# Image Processing Configuration
+image_processing:
+  model: "gpt-4o-mini"
+  max_tokens: 300
+  prompt: "Please describe this cheese product in detail - include appearance, texture, and any visible characteristics that would help identify the type of cheese."
+
+# Vector Database Configuration
+vector_db:
+  pinecone:
+    index_name: "cheese-embeddings"
+    dimension: 1536
+    metric: "cosine"
+    cloud: "aws"
+    region: "us-east-1"
+  embeddings:
+    model: "text-embedding-3-small"
+    batch_size: 100
+
+# Metadata Extraction Settings
+metadata:
+  extract_keywords: true
+  extract_texture: true
+  extract_flavor_profile: true
+  extract_color: true
+  extract_origin: true
+  extract_milk_type: true
+  
+# RAG Settings
+rag:
+  model: "gpt-4o"
+  temperature: 0.2
+  max_tokens: 1000
+  top_k: 5
+  similarity_threshold: 0.75
+
+# Streamlit App Configuration
+app:
+  title: "Cheese Expert Chatbot"
+  description: "Ask me anything about our cheese products!"
+  theme:
+    primary_color: "#ffd700"
+    background_color: "#ffffff"
+  display_context: true
