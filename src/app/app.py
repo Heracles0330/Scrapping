@@ -4,6 +4,7 @@ import time
 import json
 import sys
 from pathlib import Path
+import sqlite3
 
 # Get the absolute path to the project root
 project_root = Path(__file__).parent.absolute()
@@ -76,7 +77,7 @@ with st.sidebar:
     # Clear button in sidebar
     if st.button("Clear Chat"):
         st.session_state.messages = []
-        st.experimental_rerun()
+        st.rerun()
     
     # Download button in sidebar - replaced Save Chat
     if st.session_state.messages:
@@ -181,3 +182,47 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
+# Create a function to inject JavaScript for auto-scrolling
+def inject_scroll_js():
+    scroll_js = """
+    <script>
+    function scrollToBottom() {
+        var chatContainer = document.querySelector('.chat-container');
+        if (chatContainer) {
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
+    }
+    
+    // Run on load
+    window.addEventListener('load', scrollToBottom);
+    
+    // Create a MutationObserver to detect when new messages are added
+    const observer = new MutationObserver(scrollToBottom);
+    
+    // Start observing the chat container
+    window.addEventListener('load', function() {
+        var chatContainer = document.querySelector('.chat-container');
+        if (chatContainer) {
+            observer.observe(chatContainer, { childList: true, subtree: true });
+        }
+    });
+    </script>
+    """
+    st.markdown(scroll_js, unsafe_allow_html=True)
+
+# Add this call at the end of your app
+inject_scroll_js()
+
+def execute_sql_query(self, query):
+    """Execute SQL query with a fresh connection and return cheese IDs"""
+    try:
+        # Create a new connection for each query
+        with sqlite3.connect(self.db_path) as conn:
+            cursor = conn.cursor()
+            cursor.execute(query)
+            results = cursor.fetchall()
+            return [row[0] for row in results]
+    except sqlite3.Error as e:
+        print(f"SQLite error: {e}")
+        return []

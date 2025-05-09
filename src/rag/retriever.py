@@ -118,7 +118,9 @@ class CheeseRetriever:
         
         If the question is NOT about cheese (like technology, politics, general knowledge, other foods, etc.),
         you MUST set "use_sql_filtering" to false and "sql_query" to empty string.
-        
+        If the price in the question is in the normal form, just use the each_price.
+        If the price in the question is in the unit form, just use the price_per_unit.
+        If the weight in the question is in the normal form, just use the each_weight.
         The database has a table called 'cheese' with these columns:
         - id: unique identifier
         - title: cheese name
