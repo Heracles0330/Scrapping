@@ -19,7 +19,7 @@ def main():
         config = yaml.safe_load(file)
     
     # Load processed cheese data
-    data_path = 'data/processed/cheese_data_with_image_descriptions.json'
+    data_path = 'data/image-processed/cheese_data_with_image_descriptions.json'
     with open(data_path, 'r') as f:
         cheese_data = json.load(f)
     

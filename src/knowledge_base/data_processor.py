@@ -16,6 +16,18 @@ def extract_keywords(title, description):
     # Add more keyword extraction logic
     return keywords
 
+def parse_price(price):
+    if price == "N/A":
+        return 0
+    if len(price.split("$")) > 1:
+        return float(price.split("$")[1].split("/")[0])
+    return 0
+def parse_pack_size(pack_size):
+    if pack_size == "N/A":
+        return 0
+    if len(pack_size.split(" ")) > 1:
+        return float(pack_size.split(" ")[0])
+    return 0
 def extract_texture(description):
     """Extract texture information from description"""
     if not description:
@@ -289,17 +301,39 @@ def process_cheese_data(cheese_data):
     processed_items = []
     
     for cheese in cheese_data:
-        # Create a more conversational and comprehensive text representation
+        # Create a more comprehensive conversational text including all fields
         conversational_text = f"""
         This is {cheese.get('title', 'a cheese product')}, a {', '.join(cheese.get('category', ['cheese'])) if isinstance(cheese.get('category'), list) else cheese.get('category', 'cheese')} from {cheese.get('brand', 'unknown brand')}.
         
-        You can purchase it for {cheese.get('each_price', '') or cheese.get('case_price', 'various prices')} per {cheese.get('each_weight', '') or cheese.get('case_weight', 'unit')}.
+        Product Details:
+        - SKU: {cheese.get('sku', 'N/A')}
+        - UPC: {cheese.get('upc', 'N/A')}
+        - URL: {cheese.get('url', 'N/A')}
         
-        Physical description: {cheese.get('image_description', 'No image description available.')}
+        Pricing:
+        - Each Price: {cheese.get('each_price', 'N/A')}
+        - Case Price: {cheese.get('case_price', 'N/A')}
+        - Price Per Unit: {cheese.get('price_per_unit', 'N/A')}
+        
+        Packaging:
+        - Each Pack Size: {cheese.get('each_pack_size', 'N/A')}
+        - Case Pack Size: {cheese.get('case_pack_size', 'N/A')}
+        - Each Weight: {cheese.get('each_weight', 'N/A')}
+        - Case Weight: {cheese.get('case_weight', 'N/A')}
+        - Each Dimensions: {cheese.get('each_dimensions', 'N/A')}
+        - Case Dimensions: {cheese.get('case_dimensions', 'N/A')}
+        
+        Description: {cheese.get('image_description', 'No image description available.')}
         
         Common questions about this product:
         Q: What does this cheese taste like?
         A: Based on the description, this {cheese.get('title', '').lower() if cheese.get('title') else 'cheese'} likely has {extract_flavor_profile(cheese.get('image_description', ''))}.
+        
+        Q: What is the texture of this cheese?
+        A: This cheese has a {extract_texture(cheese.get('image_description', ''))} texture.
+        
+        Q: What color is this cheese?
+        A: This cheese is {extract_color(cheese.get('image_description', ''))}.
         
         Q: What can I pair this cheese with?
         A: This type of cheese would pair well with {suggest_pairings_based_on_category(cheese.get('category', []))}.
@@ -309,6 +343,17 @@ def process_cheese_data(cheese_data):
         
         Q: How should I store this cheese?
         A: Generally, this type of cheese should be stored {suggest_storage(cheese.get('category', []))}.
+        
+        Q: What dishes can I use this cheese in?
+        A: This cheese is great for {suggest_use_cases(cheese.get('title', ''), cheese.get('category', []))}.
+        
+        Q: What type of milk is this cheese made from?
+        A: This cheese is likely made from {extract_milk_type(cheese.get('title', ''), cheese.get('image_description', ''))} milk.
+        
+        Q: Where does this cheese originate from?
+        A: This cheese style originated in {extract_origin(cheese.get('title', ''), cheese.get('image_description', ''))}.
+        
+        Related Products: {', '.join([related.get('name', 'unknown product') for related in cheese.get('related_items', []) if related.get('name')]) if cheese.get('related_items') else 'No related products.'}
         """
         
         # Clean up the text
@@ -320,6 +365,7 @@ def process_cheese_data(cheese_data):
             **cheese,  # This spreads all fields from the cheese object into metadata
             
             # Add the computed fields
+            "text": conversational_text,
             "keywords": extract_keywords(cheese.get("title", ""), cheese.get("image_description", "")),
             "texture": extract_texture(cheese.get("image_description", "")),
             "flavor_profile": extract_flavor_profile(cheese.get("image_description", "")),
@@ -347,6 +393,14 @@ def process_cheese_data(cheese_data):
             elif isinstance(value, dict):
                 # Convert dictionaries to string
                 metadata_item[key] = str(value)
+            
+        metadata_item["case_price"] = parse_price(metadata_item["case_price"])
+        metadata_item["each_price"] = parse_price(metadata_item["each_price"])
+        metadata_item["case_pack_size"] = parse_pack_size(metadata_item["case_pack_size"])
+        metadata_item["each_pack_size"] = parse_pack_size(metadata_item["each_pack_size"])
+        metadata_item["case_weight"] = parse_pack_size(metadata_item["case_weight"])
+        metadata_item["each_weight"] = parse_pack_size(metadata_item["each_weight"])
+        metadata_item["price_per_unit"] = parse_price(metadata_item["price_per_unit"])
         
         # Handle category field separately for proper filtering
         if 'category' in cheese and cheese['category']:
