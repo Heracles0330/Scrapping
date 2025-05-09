@@ -34,8 +34,7 @@ class CheeseRetriever:
         
         # Initialize SQLite connection
         self.db_path = db_path
-        self.conn = sqlite3.connect(db_path)
-        self.cursor = self.conn.cursor()
+        
     
     def retrieve(self, user_question, top_k=20):
         """Retrieve cheese information using vector search + SQLite filtering."""
@@ -44,7 +43,7 @@ class CheeseRetriever:
         
         # Generate SQL query from user question
         sql_query, use_sql_filtering, is_cheese_question = self.generate_sql_query(user_question)
-        
+        print(sql_query)
         # If not a cheese question, return empty results
         if not is_cheese_question:
             return []
@@ -200,13 +199,21 @@ class CheeseRetriever:
     
     def execute_sql_query(self, query):
         """Execute SQL query and return cheese IDs"""
+        conn = None
         try:
-            self.cursor.execute(query)
-            results = self.cursor.fetchall()
+            # Create a new connection for each query
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            cursor.execute(query)
+            results = cursor.fetchall()
             return [row[0] for row in results]  # Assuming first column is ID
         except sqlite3.Error as e:
             print(f"SQLite error: {e}")
             return []
+        finally:
+            # Make sure connection is closed even if an error occurs
+            if conn:
+                conn.close()
 
     def generate_query_response(self, user_question):
         system_prompt = """
