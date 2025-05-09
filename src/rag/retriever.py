@@ -37,7 +37,7 @@ class CheeseRetriever:
         self.conn = sqlite3.connect(db_path)
         self.cursor = self.conn.cursor()
     
-    def retrieve(self, user_question, top_k=5):
+    def retrieve(self, user_question, top_k=20):
         """Retrieve cheese information using vector search + SQLite filtering."""
         # Generate embedding for semantic search
         embedding = self.generate_embedding(user_question)

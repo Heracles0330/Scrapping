@@ -50,7 +50,7 @@ class LLM:
             In your response, include:
             First Show all the products in the context
             IMPORTANT INSTRUCTIONS:
-            1. Always include ALL 5 cheese products in your response
+            1. As default, include ALL 5 cheese products in your response but under the user's requirement, you can include more than 5 products.
             2. PRODUCT INFORMATION:
                - Product name and brand
                - URL where the product can be purchased (format as clickable link)
