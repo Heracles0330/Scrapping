@@ -153,7 +153,7 @@ class LLM:
         self.history.append({"role": "user", "content": user_question, "timestamp": datetime.now().isoformat()})
         
         # Retrieve relevant documents
-        documents = self.retriever.retrieve(user_question, top_k=5)
+        documents = self.retriever.retrieve(user_question, top_k=20)
         
         # Check if any documents were retrieved
         if not documents:
